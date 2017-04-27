@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'bower_components/reveal.js/css/print/pdf.css' : 'bower_components/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<head>
+						<h1>WebVR</h1>
+						<p class="subtitle">It's here!</p>
+					</head>
+				</section>
+
+				<section>
+					<head>
+						<h1>a-frame</h1>
+					</head>
+					<section>
+						<ul>
+							<li class="fragment">HTML Markup and JS for VR content in browser</li>
+							<li class="fragment">Leverages existing web workflows and tools</li>
+							<li class="fragment">Uses THREE.js under the hood</li>
+							<li class="fragment">Unity-like framework</li>
+							<li class="fragment">Easy to use inspector / debug tools</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Support</h1>
+					</head>
+					<section>
+						<ul>
+							<li class="fragment">WebGL / WebVR</li>
+							<li class="fragment">Desktop to mobile responsive interface</li>
+							<li class="fragment">HTML5 positional audio</li>
+							<li class="fragment">2D and 3D Animation</li>
+							<li class="fragment">HTC Vive and Oculus Controllers</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Components</h1>
+					</head>
+					<section>
+						<ul>
+							<li class="fragment">Physics</li>
+							<li class="fragment">3D Text</li>
+							<li class="fragment">360 Degree</li>
+							<li class="fragment">Hand Tracking</li>
+							<li class="fragment">Shaders</li>
+							<li class="fragment">Motion Capture</li>
+						</ul>
+						<ul>
+							<li class="fragment">Real-time Shadows</li>
+							<li class="fragment">Particles</li>
+							<li class="fragment">Multiplayer</li>
+							<li class="fragment">OBJ, DAE, PLY support</li>
+							<li class="fragment">DRC, GLTF support</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Primitives</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/01/finish/" width="100%" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>3D Text</h1>
+					</head>
+					<section>
+						<iframe data-src="http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/" width="100%" height="450"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>360 Degree Photos</h1>
+					</head>
+					<section>
+						<iframe data-src="https://bryik.github.io/aframe-cubemap-component/yokohama/index.html" width="100%" height="450"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Animated Models</h1>
+					</head>
+					<section>
+						<img data-src="assets/img/magicavoxel.png" width="450" height="450" />
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/13/finish/" width="450" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Water</h1>
+					</head>
+					<section>
+						<iframe data-src="https://webvr.donmccurdy.com/water/" style="background: #fff;" width="100%" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Physics</h1>
+					</head>
+					<section>
+						<iframe data-src="https://webvr.donmccurdy.com/force-push/" style="background: #fff;" width="450" height="450"></iframe>
+						<iframe data-src="https://webvr.donmccurdy.com/playground/" style="background: #fff;" width="450" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Shadows</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/15/finish/" style="background: #fff;" width="100%" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Touch Controls</h1>
+					</head>
+					<section>
+						<iframe id="touch-controls-example" data-src="http://swimminglessonsformodernlife.com/aframe-motion-capture-components/examples/replay.html" style="background: #fff;" width="100%" height="400"></iframe>
+						<button id="touch-controls-example-reload-btn">Restart</button>
+					</section>
+					<script>
+						document.getElementById('touch-controls-example-reload-btn').addEventListener('click',function(){
+							document.getElementById('touch-controls-example').src = document.getElementById('touch-controls-example').src;
+						});
+					</script>
+				</section>
+				<section>
+					<head>
+						<h1>Augmented Reality</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/06/finish/" style="background: #fff;" width="100%" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>Multiplayer</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/14/finish/" style="background: #fff;" width="100%" height="450"></iframe>
+					</section>
+				</section>
+				<section>
+					<head>
+						<h1>The Inspector</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/01/finish/" style="background: #fff;" width="100%" height="450"></iframe>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="bower_components/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				viewDistance: 1,
+				dependencies: [
+					{ src: 'bower_components/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'bower_components/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

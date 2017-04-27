@@ -1,0 +1,27 @@
+{
+  "name": "aframe-presentation",
+  "description": "A presentation about WebVR / a-frame",
+  "main": "reveal.js",
+  "authors": [
+    "Michael Andrew (michael@uxvirtual.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webvr",
+    "a-frame",
+    "vr",
+    "ar"
+  ],
+  "homepage": "https://github.com/HAZARDU5/aframe-presentation",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "^3.4.1"
+  }
+}
