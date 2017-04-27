@@ -1,0 +1,24 @@
+.example-iframe{
+    width: 100%;
+    height: 350px;
+
+    &__short{
+        height: 300px;
+    }
+
+    &__half{
+        width: 450px;
+    }
+}
+
+a.btn{
+    &__view-demo{
+        padding: 20px;
+        background-color: rgba(200,200,200,0.8);
+        border-radius: 5px;
+
+        &:hover{
+            background-color: #ccc;
+        }
+    }
+}
