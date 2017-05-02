@@ -1,9 +1,37 @@
-.example-iframe {
+.reveal .title-slide p {
+  font-size: 48%;
+  margin-top: 1em;
+  margin-bottom: 0; }
+
+.reveal .title-slide img.gladeye-logo {
+  width: 150px; }
+
+.reveal .gladeye-slide img.gladeye-logo {
+  margin-top: 0; }
+
+.reveal section .loader {
+  margin: auto;
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.reveal section img.gladeye-logo {
+  border: 0;
+  background: 0;
+  box-shadow: none;
+  width: 400px; }
+
+.example-window {
   width: 100%;
   height: 350px; }
-  .example-iframe__short {
+  .example-window__short {
     height: 300px; }
-  .example-iframe__half {
+  .example-window__half {
     width: 450px; }
 
 a.btn__view-demo {
@@ -12,3 +40,47 @@ a.btn__view-demo {
   border-radius: 5px; }
   a.btn__view-demo:hover {
     background-color: gray; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes pulse {
+  50% {
+    background: white; } }
+
+.loader .loading {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  animation: spin 1s infinite linear; }
+  .loader .loading--double {
+    border-style: double;
+    border-width: .5rem; }
+
+.loader .loading-pulse {
+  position: relative;
+  width: 18px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 750ms infinite;
+  animation-delay: 250ms; }
+  .loader .loading-pulse:before, .loader .loading-pulse:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 48px;
+    width: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse 750ms infinite; }
+  .loader .loading-pulse:before {
+    left: -36px; }
+  .loader .loading-pulse:after {
+    left: 36px;
+    animation-delay: 500ms; }

@@ -1,26 +1,83 @@
-.example-iframe{
-    width: 100%;
-    height: 350px;
+.reveal{
 
-    &__short{
-        height: 300px;
+  .title-slide{
+    p{
+      //width: 400px;
+      font-size: 48%;
+      margin-top: 1em;
+      margin-bottom: 0;
     }
 
-    &__half{
-        width: 450px;
+    img{
+      &.gladeye-logo{
+
+        width: 150px;
+      }
     }
+  }
+
+  .gladeye-slide{
+    img{
+      &.gladeye-logo{
+        margin-top: 0;
+      }
+    }
+  }
+
+  section{
+
+    .loader{
+      margin: auto;
+      width: 88px;
+      height: 88px;
+      position: absolute;
+      z-index: -1;
+      top:0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    img {
+      &.gladeye-logo {
+        border: 0;
+        background: 0;
+        box-shadow: none;
+        width: 400px;
+      }
+    }
+  }
+
+
+
+
+}
+
+.example-window{
+  width: 100%;
+  height: 350px;
+
+  &__short{
+    height: 300px;
+  }
+
+  &__half{
+    width: 450px;
+  }
 }
 
 a.btn{
-    &__view-demo{
-        padding: 20px;
-        background-color: rgba(255,255,255,0.9);
-        border-radius: 5px;
+  &__view-demo{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 5px;
 
-        &:hover{
-            background-color: rgba(128,128,128,1);
-        }
-
-
+    &:hover{
+      background-color: rgba(128,128,128,1);
     }
+
+
+  }
 }
+
+@import "loaders/spin";
