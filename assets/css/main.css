@@ -43,6 +43,8 @@
 .example-window {
   width: 100%;
   height: 350px; }
+  .example-window__opaque {
+    background: #fff; }
   .example-window__short {
     height: 300px; }
   .example-window__half {
