@@ -1,5 +1,13 @@
 .reveal{
 
+  h1{
+    margin-bottom: 0;
+  }
+
+  .subtitle{
+    margin-top: 0;
+  }
+
   .title-slide{
     p{
       //width: 400px;
@@ -24,6 +32,17 @@
     }
   }
 
+  .logo-matrix{
+    margin-top: 2em;
+    p{
+      margin: 0.3em;
+
+      img{
+        margin: 0.3em;
+      }
+    }
+  }
+
   section{
 
     .loader{
@@ -39,10 +58,13 @@
     }
 
     img {
+
+      border: 0;
+      background: none;
+      box-shadow: none;
+
       &.gladeye-logo {
-        border: 0;
-        background: 0;
-        box-shadow: none;
+
         width: 400px;
       }
     }
@@ -63,6 +85,10 @@
 
   &__half{
     width: 450px;
+  }
+
+  &__tall{
+    height: 350px;
   }
 }
 
