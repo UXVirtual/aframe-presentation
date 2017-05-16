@@ -335,6 +335,24 @@
 
 				<section>
 					<head>
+						<h1>Today's Hardware</h1>
+					</head>
+					<section>
+						<p>
+							<img src="assets/img/headsets/daydream.jpg" height="100"/>
+							<img src="assets/img/headsets/gearvr.jpg" height="100"/>
+							<img src="assets/img/headsets/Google-Cardboard.jpg" height="100"/>
+						</p>
+						<p>
+							<img src="assets/img/headsets/hololens.jpg" height="100"/>
+							<img src="assets/img/headsets/htc-vive-set.0.jpg" height="100"/>
+							<img src="assets/img/headsets/oculus-rift.jpg" height="100"/>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<head>
 						<h1>Projects Today</h1>
 					</head>
 					<section>
@@ -343,7 +361,7 @@
 							<li>Architecture</li>
 							<li>Real Estate</li>
 							<li>Training</li>
-
+							<li>E-Commerce</li>
 						</ul>
 						<ul>
 							<li>Installations</li>
@@ -393,6 +411,16 @@
 					</section>
 				</section>
 
+				<section data-background-image="assets/img/projects/e-commerce.jpg">
+					<head>
+						<h1>E-Commerce</h1>
+					</head>
+					<section>
+						<iframe data-src="http://vr.zeldman.com/" class="example-window"></iframe>
+						<div class="loader example-window"><div class="loading loading--double"></div></div>
+					</section>
+				</section>
+
 				<section>
 					<head>
 						<h1>Installations</h1>
@@ -430,6 +458,23 @@
 					<section>
 						<iframe width="560" height="315" data-src="https://www.youtube.com/embed/qYfNzhLXYGc?showinfo=0&rel=0&start=51&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
 						<div class="loader example-window"><div class="loading loading--double"></div></div>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Future Hardware</h1>
+					</head>
+					<section>
+						<p>
+							<img src="assets/img/headsets/acer-windows-mixed-reality.jpg" height="125"/>
+							<img src="assets/img/headsets/hp-mixed-reality.jpg" height="125"/>
+
+						</p>
+						<p>
+							<img src="assets/img/headsets/lenovo-windows-holographic.jpg" height="125"/>
+							<img src="assets/img/headsets/magic-leap-hp-660x330.jpg" height="125"/>
+						</p>
 					</section>
 				</section>
 
@@ -751,7 +796,7 @@
 					<head>
 						<h1>Locomotion</h1>
 					</head>
-					<section>
+					<section data-notes="Low-end headsets may have one or no input methods available. For a true cross-browser experience gaze based detection should be used to move users around the scene. For desktop VR with hand controls, an enhanced layer of interactivity can be added to best utilize these.">
 						<ul>
 							<li>Limited input methods</li>
 							<li>Google Cardboard 1-button</li>
@@ -768,7 +813,7 @@
 						<h1>Locomotion</h1>
 						<p class="subtitle">Cursor Controls</p>
 					</head>
-					<section>
+					<section data-notes="On mobile, cursor controls are the best way to allow users to interact with the content. Having a reactive crosshair visible on screen allows them some degree of accuracy in lieu of physical controls. There should be also some kind of fuze based interaction, where the user can gaze at an object for 2 seconds or so to activate it. The cursor should animate / change color to reflect a fusing state with the appropriate audio cues so the experience feels responsive.">
 						<ul>
 							<li>Gaze or button based interaction</li>
 							<li>Optimal fuze time needed</li>
@@ -783,7 +828,7 @@
 
 					</head>
 					<section>
-						<iframe data-src="https://webvr.donmccurdy.com/checkpoints/" class="example-window example-window__short example-window__opaque"></iframe>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/17/finish/" class="example-window example-window__short example-window__opaque"></iframe>
 						<div class="loader example-window"><div class="loading loading--double"></div></div>
 						<p class="subtitle">Cursor Controls Example</p>
 					</section>
@@ -897,9 +942,6 @@
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/Th-Z6QQ5AOQ?showinfo=0&rel=0&start=44" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Direct Communication</p>
 					</section>
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
 
 				<section>
@@ -988,6 +1030,22 @@
 						<a href="https://aframe.io/aframe-school/#/" target="_blank" class="btn btn__view-demo">Launch Now</a>
 					</section>
 				</section>
+
+				<section>
+					<head>
+						<h1>More Resources</h1>
+					</head>
+					<section>
+						<ul>
+							<li><a href="https://aframe.io/blog/" target="_blank">A-Frame Blog</a></li>
+							<li><a href="https://aframe.io/docs/0.5.0/introduction/" target="_blank">A-Frame Docs</a></li>
+							<li><a href="https://aframevr-slack.herokuapp.com/" target="_blank">A-Frame Slack Chat</a></li>
+							<li><a href="https://aframe.io/aframe-school/#/" target="_blank">A-Frame School</a></li>
+							<li><a href="https://github.com/aframevr/awesome-aframe" target="_blank">Awesome A-Frame</a></li>
+							<li><a href="https://www.youtube.com/watch?v=hheYLOworF4" target="_blank">Exporting Mixamo Animations Tutorial</a></li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -1002,7 +1060,7 @@
 				history: true,
 				viewDistance: 1,
 				defaultTiming: 60,
-				showNotes: true,
+				showNotes: false,
 				dependencies: [
 					{ src: 'bower_components/reveal.js/plugin/markdown/marked.js' },
 					{ src: 'bower_components/reveal.js/plugin/markdown/markdown.js' },
