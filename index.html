@@ -972,7 +972,7 @@
 					<head>
 						<h1>Visual Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Mirror's Edge provides its players the option to use a guidance feature called runner vision. It uses the color red and orange to communicate objective to the player. Each red object is essentially an advancement within the progression of the games design. It points out certain objects just to say 'hey go this direction', directing its players through the games less-than linear layout.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/zvizJ-I_CKk?showinfo=0&rel=0&start=87&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Object Color</p>
 					</section>
@@ -982,7 +982,7 @@
 					<head>
 						<h1>Visual Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Lighting is a great tool for providing visual feedback and to lead the user through the environment. In the introduction sequence of Bioshock it's used heavily in the form of burning jet fuel and audio cues to indicate paths the player can't cross. This funnels the player towards their main objective - the lighthouse. Lanterns leading up the steps of the lighthouse help reinforce the entrance to the structure and lead the player to the next area.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/HPjbXpfu-Bo?showinfo=0&rel=0&start=80&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Lighting</p>
 					</section>
@@ -992,7 +992,7 @@
 					<head>
 						<h1>Visual Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Responsiveness and Indication in the realm of surface embellishments are extremely easy ways to communicate direct interaction, while giving users a sense of depth. In VR, it's important to give the user the impression that the environment is alive and active by altering a certain object along with a game event. Valve's game Portal uses indicative embellishments to communicate state. For example, the Aperture Science weighted storage cubes can compress buttons on the floor, activating doors. This causes supporting embellishments on the walls to change color in response, and even flip through distinct symbols to illustrate success, or a need for growth.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/cMfD6UD51so?showinfo=0&rel=0&start=90&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Responsiveness &amp; Indication</p>
 					</section>
@@ -1011,7 +1011,7 @@
 					<head>
 						<h1>Golden Rules</h1>
 					</head>
-					<section>
+					<section data-notes="There are several things to remember for creating a good VR experience. The number one complaint from users experiencing VR, especially for the first time is that it is nauseating after a certain amount of time in the experience. There are a lot of hardware factors that can come into play here, such as the headset lens configuration, the user's device specifications and whether they're sitting or standing. It's your responsibility as a developer to do everything you can to ensure your experience runs smoothly and puts the control of the experience fully in the user's hands.">
 						<p>Several rules for providing the best experience without causing nausea / disorientation.</p>
 					</section>
 				</section>
@@ -1020,7 +1020,10 @@
 					<head>
 						<h1>Do's</h1>
 					</head>
-					<section>
+					<section data-notes="Make sure the user has full control of the movement of the camera. Where they look the camera should move to 1:1 every time - no exceptions. When your field of view in VR doesn't update to match your physical head movement this is very disorientating. Currently on mobile devices such as Google Cardboard there is no support for positional head tracking, which makes the 1:1 experience impossible to achieve, but newer headsets and software are being worked on the utilize the device camera to offer inside-out tracking so the user doesn't need external sensors to provide positional tracking.
+ If it can be avoided, don't drop the user in a room-scale walking experience. Dropping can cause the camera to speed up too quickly and creates a massive disconnect between what the users eyes are seeing and what the rest of their body is physically feeling. This is one of the reasons traditional First Person Shooter games don't translate very well to VR and will probably remain quite niche.
+ Putting object too close to the user's face should be avoided - always keep the viewport clear of obstruction. This can be achieved by fading out any object that gets within the user's comfort zone, especially if the user puts their head through a wall - the user's viewport should fade out completely until they stick their head back into the game area.
+ In traditional first person games, a first person player model is typically employed where the character is missing a head and arms. At the very least, providing representations of the user's hands is important the user's hardware supports hand controllers. Ideally the users hands should be represented 1:1 so when the controller modes and rotates in 3D space, so does the hand model.">
 						<ul>
 							<li>User retains control always</li>
 							<li>Physics shouldn't affect user</li>
@@ -1035,13 +1038,29 @@
 					<head>
 						<h1>Dont's</h1>
 					</head>
-					<section>
+					<section data-notes="Shaking the camera takes control away from the user. While can be effective in traditional 3D games, in VR it is another vector for nausea.
+ Spinning the user is to be avoided as well - this will make them sick as their eyes are seeing the scene moving quickly while the fluid in their inner-ear remains stationary.
+ Care should also be taken not to crowd the user's personal space with objects as this will make them uncomfortable, especially with any kind of heads up display UI.
+ Arms on the player character's first-person model are another mistake that can cause uncomfortable situations, especially with positional tracking.
+ You can end up with the user's arms going through their head or on uncomfortable angles if they are connected to the hand controls as there is currently no way to track the user's physical joints.">
 						<ul>
 							<li>Shake the camera</li>
-							<li>Drop the user</li>
-							<li>Spin the user</li>
+							<li>Rapidly spin the user</li>
 							<li>Place objects too close to face</li>
 							<li>Use arms on player model</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Golden Rules</h1>
+					</head>
+					<section data-notes="Of course technology keeps changing, and not all of these rules may be applicable to your experience. It's always important to test your assumptions on actual people at key milestones of your project to identify and issues early with your gameplay idea or experience.">
+						<ul>
+							<li>Guidelines, rather than actual rules</li>
+							<li>Check your assumptions</li>
+							<li>Test on actual people!</li>
 						</ul>
 					</section>
 				</section>
