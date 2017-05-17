@@ -40,6 +40,14 @@
   .reveal section img.gladeye-logo {
     width: 400px; }
 
+.reveal section.profile p {
+  margin-bottom: 0; }
+  .reveal section.profile p img {
+    margin-bottom: 0; }
+
+.reveal section ul.profile-list {
+  text-align: center; }
+
 .example-window {
   width: 100%;
   height: 350px; }
