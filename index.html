@@ -784,12 +784,12 @@
 					<head>
 						<h1>UX in VR</h1>
 					</head>
-					<section>
+					<section data-notes="User Experience design for VR, AR and Mixed Reality differs from traditional 2D screens as it adds the element of 3D spatial awareness to the user. They have an enhanced sense of scale and position of objects in the VR environment and experiences should be built to fully take advantage of this. They may move around in 3D space using some form of locomotion, and interact with objects in the scene. Being able to direct the users attention and lead the user through the scene with traditional 3D game design teqniques is vital, especially in open-ended user driven experiences where there is less linear narrative. There are also several golden rules to keep in mind when designing VR experiences.">
 						<ul>
 							<li>Locomotion</li>
 							<li>Object interaction</li>
-							<li>Golden rules</li>
 							<li>Leading the user</li>
+							<li>Golden rules</li>
 						</ul>
 					</section>
 				</section>
@@ -798,14 +798,14 @@
 					<head>
 						<h1>Locomotion</h1>
 					</head>
-					<section data-notes="Low-end headsets may have one or no input methods available. For a true cross-browser experience gaze based detection should be used to move users around the scene. For desktop VR with hand controls, an enhanced layer of interactivity can be added to best utilize these.">
+					<section data-notes="Low-end headsets may have one or no input methods available such as with Google Cardboard's single button. For a true cross-device experience gaze based detection should be used to move users around the scene. For desktop VR with hand or gamepad controls like Oculus Rift or HTC Vive, an enhanced layer of interactivity can be added to best utilize these.">
 						<ul>
 							<li>Limited input methods</li>
 							<li>Google Cardboard 1-button</li>
+							<li>Google Daydream Controller</li>
 							<li>Gamepad</li>
 							<li>Keyboard & Mouse</li>
 							<li>Oculus / Vive Controls</li>
-							<li>Google Daydream Controller</li>
 						</ul>
 					</section>
 				</section>
@@ -830,9 +830,9 @@
 
 					</head>
 					<section>
-						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/17/finish/" class="example-window example-window__short example-window__opaque"></iframe>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/17/finish/" class="example-window example-window__shorter example-window__opaque"></iframe>
 						<div class="loader example-window"><div class="loading loading--double"></div></div>
-						<p class="subtitle">Cursor Controls Example</p>
+						<p class="subtitle">Gaze Cursor Controls Example<br />[<a href="http://vr.zeldman.com/" target="_new">Other example</a>]</p>
 					</section>
 				</section>
 
@@ -841,11 +841,11 @@
 						<h1>Locomotion</h1>
 						<p class="subtitle">Hand Controls</p>
 					</head>
-					<section>
+					<section data-notes="Hand controls such as Oculus Touch or the HTC Vive controllers offer a precise control interface for the user to manipulate objects and navigate virtual environments. For now, these are mostly regulated to desktop setups, but other controllers are emerging onto the market such as the ones bundled with Samsung GearVR and Google Daydream.">
 						<ul>
 							<li>Precision Controls</li>
-							<li>Desktop Only</li>
 							<li>Manipulation &amp; Navigation</li>
+							<li>Desktop Only</li>
 						</ul>
 					</section>
 				</section>
@@ -858,6 +858,29 @@
 						<iframe data-src="https://hazardu5.github.io/aframe-teleport-controls/multiple/?avatar-recording=recording.json" class="example-window example-window__short example-window__opaque"></iframe>
 						<div class="loader example-window"><div class="loading loading--double"></div></div>
 						<p class="subtitle">Teleport Navigation Example</p>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Object Interaction</h1>
+					</head>
+					<section data-notes="There are several methods for interacting with objects in VR. Most experiences uses some kind of crosshair or cursor as a base. This is a well-established element of traditional 3D games and provides a visual aid for users navigating 3D space. It can react when interactable objects in the environment pass under it and be used for precise interactions such as shooting, grabbing and activating objects. Hand controls when available add even more precision and allow the user 1:1 representation of their hands in 3D space via their physical controller.">
+						<ul>
+							<li>Cursor</li>
+							<li>Hand Controls</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Object Interaction</h1>
+					</head>
+					<section>
+						<iframe data-src="https://hazardu5.github.io/aframe-workshop/examples/18/finish/" class="example-window example-window__opaque example-window__short"></iframe>
+						<div class="loader example-window"><div class="loading loading--double"></div></div>
+						<p class="subtitle">Standard Cursor Example</p>
 					</section>
 				</section>
 
@@ -885,48 +908,9 @@
 
 				<section>
 					<head>
-						<h1>Golden Rules</h1>
-					</head>
-					<section>
-						<p>Several rules for providing the best experience without causing nausea / disorientation.</p>
-					</section>
-				</section>
-
-				<section>
-					<head>
-						<h1>Do's</h1>
-					</head>
-					<section>
-						<ul>
-							<li>User retains control always</li>
-							<li>Physics shouldn't affect user</li>
-							<li>Viewport should remain clear</li>
-							<li>Use first person model</li>
-							<li>Represent physical controllers 1:1</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<head>
-						<h1>Dont's</h1>
-					</head>
-					<section>
-						<ul>
-							<li>Shake the camera</li>
-							<li>Drop the user</li>
-							<li>Spin the user</li>
-							<li>Place objects too close to face</li>
-							<li>Use arms on player model</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<head>
 						<h1>Leading the User</h1>
 					</head>
-					<section>
+					<section data-notes="Being able to lead the user in 3D environments is essential. Video games have been doing this for years, and have become increasingly reliant on audio and visual cues as well as non-player characters or other UI such as mini maps to do this. In VR, ideally feedback should be contained within the game world itself - we want to have as little UI in front of the user as possible so it makes the experience more immersive.">
 						<ul>
 							<li>Audio Cues</li>
 							<li>Visual Cues</li>
@@ -939,7 +923,7 @@
 					<head>
 						<h1>Audio Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Direct Communication is where an object communicates directly as a cause of direct action on its part. When the ball hits the paddle or block in the old arcade game Arkanoid, it makes a sound. This is direct object interaction. Direct communication is important when you want to convey specific audio cues. In the context of a horror gam this could be a scream of pain when you shoot a monster, or the creak of a wooden rocker when you push back a rocking chair.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/Th-Z6QQ5AOQ?showinfo=0&rel=0&start=44" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Direct Communication</p>
 					</section>
@@ -949,7 +933,7 @@
 					<head>
 						<h1>Audio Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Indirect communication is an indirect method of object interaction. Meaning, by causing something to happen in the game, something else responds with audio. A typical example of this is a 'sighting' state for an enemy. When an enemy sees you their AI changes, an audio cue that signifies that change would be appropriate. Metal Gear Solid for the original PlayStation illustrates this perfectly. An audio tone is accompanied by a visual exclamation mark. This pattern has been used successfully throughout the years in other games such as a Assassin's Creed and The Legend of Zelda: Breath of the Wild.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/NnLBZFgFhZY?showinfo=0&rel=0&start=80" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Indirect Communication</p>
 					</section>
@@ -959,7 +943,7 @@
 					<head>
 						<h1>Audio Cues</h1>
 					</head>
-					<section>
+					<section data-notes="Environmental communication is paramount in reinforcing a character or object's existence in the game environment. The character or object literally comes alive as a personality or physical entity. But as with all different types of object interaction, it's important to remember to keep a consistent set of sounds from character to character. The environment can communicate to the player information important for the game-playing experience. For example, a raven flies by in a forest, making a screeching sound that informs the player that he or she has ventured too far. A swamp makes a menacing gurgling sound, informing the player that he or she shouldn't go there. The sound of a portal opening and closing in the distance informs the player that he or she is close to the level's exit. A great example is the survival horror game Alien: Isolation. It has a minimal HUD and relies heavily on environmental sound cues to indicate danger and points of interaction. The primary antagonist, the Alien, will make a loud thumping sound as it walks that the player can use to identify its position nearby.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/SdNVtu2VXDs?showinfo=0&rel=0&start=4" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Environmental / Ambient</p>
 					</section>
@@ -969,7 +953,7 @@
 					<head>
 						<h1>Audio Cues</h1>
 					</head>
-					<section>
+					<section data-notes="The nonlinear medium of virtual reality can lead a player down an enormous number of pathways to an enormous number of resolutions. From the standpoint of music composition, this means that a single piece may resolve in one of an enormous number of ways. Event-driven music engines (or adaptive audio engines) allow music to change along with game state changes. Event-driven music isn't composed for linear playback; instead, it's written in such a way as to allow a certain music sequence (ranging in size from one note to several minutes of music) to transition into one or more other music sequences at any point in time. A simple implementation of this may be two tracks designed to run in parallel - one with a more subtle melody and another that layers additional instruments on top with more upbeat tunes, indicating a change in the games state such as a combat encounter. This technique is used in The Legend of Zelda: Breath of the Wild to indicate that the player is following the correct path. The music remains soft and subtle while travelling in the correct direction through the 'Lost Woods' environment, then ramps up when the player is about to be consumed by the fog and teleported back to the start.">
 						<iframe width="480" height="270" data-src="https://www.youtube.com/embed/R7W5eoYeAV0?showinfo=0&rel=0&start=136" frameborder="0" allowfullscreen></iframe>
 						<p class="subtitle">Adaptive Music</p>
 					</section>
@@ -1020,6 +1004,45 @@
 					</head>
 					<section>
 						<a href="http://www.gamasutra.com/blogs/AdamHenry/20150713/248186/Visual_Cues_In_Level_Design.php" target="_blank" class="btn btn__view-demo">Read More</a>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Golden Rules</h1>
+					</head>
+					<section>
+						<p>Several rules for providing the best experience without causing nausea / disorientation.</p>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Do's</h1>
+					</head>
+					<section>
+						<ul>
+							<li>User retains control always</li>
+							<li>Physics shouldn't affect user</li>
+							<li>Viewport should remain clear</li>
+							<li>Use first person model</li>
+							<li>Represent physical controllers 1:1</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<head>
+						<h1>Dont's</h1>
+					</head>
+					<section>
+						<ul>
+							<li>Shake the camera</li>
+							<li>Drop the user</li>
+							<li>Spin the user</li>
+							<li>Place objects too close to face</li>
+							<li>Use arms on player model</li>
+						</ul>
 					</section>
 				</section>
 

@@ -47,6 +47,8 @@
     background: #fff; }
   .example-window__short {
     height: 300px; }
+  .example-window__shorter {
+    height: 250px; }
   .example-window__half {
     width: 450px; }
   .example-window__tall {
