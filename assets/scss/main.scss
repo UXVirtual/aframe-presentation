@@ -4,6 +4,52 @@
     margin-bottom: 0;
   }
 
+  .compatibility-table{
+
+    th{
+
+      font-size: 80%;
+
+      img{
+        height: 40px;
+        width: auto;
+        max-height: none;
+        max-width: none;
+        margin: 0;
+      }
+
+    }
+
+    td{
+
+      font-size: 50%;
+
+      &.icon {
+        text-align: center;
+
+        .fa-check {
+          color: #6ea55b;
+
+          &__partial {
+            color: #a5a035;
+          }
+        }
+
+        .fa-times {
+          color: #e77258;
+        }
+
+        sub{
+          font-size: 50%;
+        }
+      }
+    }
+  }
+
+  .footnote{
+    font-size: 50%;
+  }
+
   .subtitle{
     margin-top: 0;
   }

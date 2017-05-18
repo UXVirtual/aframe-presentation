@@ -1,6 +1,31 @@
 .reveal h1 {
   margin-bottom: 0; }
 
+.reveal .compatibility-table th {
+  font-size: 80%; }
+  .reveal .compatibility-table th img {
+    height: 40px;
+    width: auto;
+    max-height: none;
+    max-width: none;
+    margin: 0; }
+
+.reveal .compatibility-table td {
+  font-size: 50%; }
+  .reveal .compatibility-table td.icon {
+    text-align: center; }
+    .reveal .compatibility-table td.icon .fa-check {
+      color: #6ea55b; }
+      .reveal .compatibility-table td.icon .fa-check__partial {
+        color: #a5a035; }
+    .reveal .compatibility-table td.icon .fa-times {
+      color: #e77258; }
+    .reveal .compatibility-table td.icon sub {
+      font-size: 50%; }
+
+.reveal .footnote {
+  font-size: 50%; }
+
 .reveal .subtitle {
   margin-top: 0; }
 
