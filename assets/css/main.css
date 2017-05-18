@@ -65,6 +65,9 @@
   .reveal section img.gladeye-logo {
     width: 400px; }
 
+.reveal section.more-resources {
+  font-size: 80%; }
+
 .reveal section.profile p {
   margin-bottom: 0; }
   .reveal section.profile p img {
