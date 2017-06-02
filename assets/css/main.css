@@ -11,7 +11,7 @@
     margin: 0; }
 
 .reveal .compatibility-table td {
-  font-size: 50%; }
+  font-size: 45%; }
   .reveal .compatibility-table td.icon {
     text-align: center; }
     .reveal .compatibility-table td.icon .fa-check {
@@ -21,10 +21,10 @@
     .reveal .compatibility-table td.icon .fa-times {
       color: #e77258; }
     .reveal .compatibility-table td.icon sub {
-      font-size: 50%; }
+      font-size: 45%; }
 
 .reveal .footnote {
-  font-size: 50%; }
+  font-size: 30%; }
 
 .reveal .subtitle {
   margin-top: 0; }
