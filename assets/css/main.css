@@ -34,10 +34,10 @@
   margin-top: 1em;
   margin-bottom: 0; }
 
-.reveal .title-slide img.gladeye-logo {
+.reveal .title-slide img.logo {
   width: 150px; }
 
-.reveal .gladeye-slide img.gladeye-logo {
+.reveal .gladeye-slide img.logo {
   margin-top: 0; }
 
 .reveal .logo-matrix {
@@ -62,7 +62,7 @@
   border: 0;
   background: none;
   box-shadow: none; }
-  .reveal section img.gladeye-logo {
+  .reveal section img.logo {
     width: 400px; }
 
 .reveal section.more-resources {

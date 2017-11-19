@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "concurrently --kill-others \"npm run watch:css\" \"npm run serve-http\"",
-    "build:css": "node node_modules/.bin/node-sass -w assets/scss -o assets/css",
+    "build:css": "node node_modules/.bin/node-sass assets/scss -o assets/css",
     "watch:css": "node node_modules/.bin/node-sass -w assets/scss -o assets/css",
     "serve-http": "node node_modules/.bin/http-server ./ -p 3001 -o --gzip",
     "test": "echo \"Error: no test specified\" && exit 1"
